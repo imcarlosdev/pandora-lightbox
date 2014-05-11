@@ -6,7 +6,7 @@ With tons of love by @choquo - Release Date 11-05-2014
 
 var transitionSpeed = 500;
 var offsetContent = 100; /*Margin top and botton for content*/
-var loadingPath = 'media/plugins/pandora-lightbox/loading.gif';
+var loadingPath = 'source/loading.gif';
 
 $(function(){
 
