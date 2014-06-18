@@ -11,13 +11,15 @@
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 #pandora-lb-content-inner{
 	position: relative;
 	width: 520px;
 	margin: 0 auto;
+	display: inline-block;
 }
-#pandora-lb-content-inner>img{
+#pandora-lb-content-inner img:first-child{ /*Affects only the first image in content*/
 	width: 100%;
 }
 #pandora-lb-loading{
