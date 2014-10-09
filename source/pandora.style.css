@@ -29,7 +29,7 @@
 	height: 42px;
 	margin:150px auto auto auto;
 }
-#pandora-lb-loading img{
+#pandora-lb-content-inner #pandora-lb-loading img{
 	width: 22px;
 	margin: 10px;
 }
