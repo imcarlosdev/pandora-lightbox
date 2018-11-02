@@ -3,31 +3,42 @@
 	z-index: 9999;
 	width: 100%;
 	height: 100%;
+	top: 0;
 	overflow-y: scroll;
-	background: rgba(144, 153, 52, 0.9);
+	background: rgba(0, 0, 0, 0.7);
 }
 #pandora-lb-content{
 	position: relative;
 	width: 100%;
-	margin: 0;
 	padding: 0;
-	text-align: center;
 }
 #pandora-lb-content-inner{
 	position: relative;
-	width: 520px;
 	margin: 0 auto;
-	display: inline-block;
+	padding: 30px 0;
+	display: block;
+	width: 90%;
+	box-sizing: border-box;
 }
-#pandora-lb-content-inner img:first-child{ /*Affects only the first image in content*/
+/*Only if the content it's an image*/
+.pandora-lb-image{
+	min-width: auto;
+	max-width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+.pandora-lb-iframe{
 	width: 100%;
+	display: block;
+	border: none;
 }
 #pandora-lb-loading{
-	background: #000;
-	border-radius: 6px;
+	border: 1px solid rgba(255,255,255,0.2);
+	background: #fff;
+	border-radius: 40px;
 	width: 42px;
 	height: 42px;
-	margin:150px auto auto auto;
+	margin:150px auto;
 }
 #pandora-lb-content-inner #pandora-lb-loading img{
 	width: 22px;
