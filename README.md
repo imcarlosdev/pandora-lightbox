@@ -9,7 +9,7 @@ Just include jQuery and core files from "source/" folder.
 	<script src="source/jquery.min.js"></script>
 	<script src="source/pandora.jquery.js"></script>
 
-And put "pandora-lightbox" class to your links.
+Add the classname "pandora-lightbox" class to your links.
 
 	<a class="pandora-lightbox" href="picture.jpg">Load a picture</a>
 	<a class="pandora-lightbox" href="document.htm">Load a document</a>
