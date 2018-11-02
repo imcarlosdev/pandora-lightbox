@@ -1,7 +1,7 @@
-##Pandora Lightbox
+## Pandora Lightbox
 Pandora is a lightweight lightbox, it works fine on iPad, pc, mac. you can load content with height overflowed and scroll the lightbox content without pain.
 
-###Usage
+### Usage
 
 Just include jQuery and core files from "source/" folder.
 	
@@ -14,7 +14,7 @@ And put "pandora-lightbox" class to your links.
 	<a class="pandora-lightbox" href="picture.jpg">Load a picture</a>
 	<a class="pandora-lightbox" href="document.htm">Load a document</a>
 
-###Parameters
+### Parameters
 Change some parameters in file pandora.jquery.js and voilá!
 
 	var transitionSpeed = 500;

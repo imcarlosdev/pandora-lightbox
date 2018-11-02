@@ -2,8 +2,7 @@
 PANDORA LIGHTBOX V1.0
 License: MIT
 Author: Carlos Maldonado @choquo
-Release date: 11-05-2014 
-Last update: 31-07-2017
+Github: https://github.com/choquo/pandora-lightbox
 */
 
 var pandoraTransitionSpeed = 300;
