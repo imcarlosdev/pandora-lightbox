@@ -49,7 +49,8 @@ jQuery(function(){
 
 				//*** PDF
 				if( /\.pdf/.test(uri) ){
-					var content = '<iframe allowfullscreen webkitallowfullscreen id="pandora-lb-iframe" style="border: none; width: 100%;" src="source/vendors/ViewerJS/#../../../'+uri+'"></iframe>';
+					var content = '<div onclick="closePandoraLightbox()" style="background: white; padding: 2px 12px; position: absolute; z-index: 1; right: 0px; top: 0px; cursor: pointer; font-size: 24px; color: #818a91;">×</div>'+
+								  '<iframe allowfullscreen webkitallowfullscreen id="pandora-lb-iframe" style="border: none; width: 100%;" src="source/vendors/ViewerJS/#../../../'+uri+'"></iframe>';
 					jQuery("#pandora-lb-content-inner").html(content);
 					jQuery("#pandora-lb-wrapper").fadeIn(pandoraTransitionSpeed);
 					jQuery("#pandora-lb-iframe").height( parseInt(jQuery("#pandora-lb-wrapper").height())-60 );
@@ -58,7 +59,10 @@ jQuery(function(){
 
 				//*** Images
 				if( /\.png|\.jpg|\.jpeg|\.bmp|\.gif|\.svg/.test(uri) ){
-					var content = '<img class="pandora-lb-image" src="'+uri+'">';
+					var content = '<div style="position: relative;">'+
+									'<div onclick="parent.closePandoraLightbox()" style="background: white; padding: 2px 12px; position: absolute; z-index: 1; right: 0px; top: 0px; cursor: pointer; font-size: 24px; color: #818a91;">×</div>'+
+									'<img class="pandora-lb-image" src="'+uri+'">'+
+								 '</div>';
 					jQuery("#pandora-lb-content-inner").html(content);
 					jQuery("#pandora-lb-wrapper").fadeIn(pandoraTransitionSpeed);
 					return false;
@@ -66,7 +70,8 @@ jQuery(function(){
 
 				//*** External pages
 				if( /http\:|https\:/.test(uri) ){
-					var content = '<iframe allowfullscreen webkitallowfullscreen id="pandora-lb-iframe" style="border: none; width: 100%;" src="'+uri+'"></iframe>';
+					var content = '<div onclick="closePandoraLightbox()" style="background: white; padding: 2px 12px; position: absolute; z-index: 1; right: 0px; top: 0px; cursor: pointer; font-size: 24px; color: #818a91;">×</div>'+
+								  '<iframe allowfullscreen webkitallowfullscreen id="pandora-lb-iframe" style="border: none; width: 100%;" src="'+uri+'"></iframe>';
 					jQuery("#pandora-lb-content-inner").html(content);
 					jQuery("#pandora-lb-wrapper").fadeIn(pandoraTransitionSpeed);
 					jQuery("#pandora-lb-iframe").height( parseInt(jQuery("#pandora-lb-wrapper").height())-60 );
@@ -79,7 +84,7 @@ jQuery(function(){
 									jQuery("#pandora-lb-content-inner").html(content);
 									jQuery("#pandora-lb-wrapper").fadeIn(pandoraTransitionSpeed);
 							  	});
-					jQuery("#pandora-lb-wrapper").bind("click", function(){ 	req.abort(); });
+					jQuery("#pandora-lb-wrapper").bind("click", function(){ req.abort(); });
 					return false;
 				}
 			},400);
