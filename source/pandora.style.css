@@ -11,6 +11,7 @@
 	position: relative;
 	width: 100%;
 	padding: 0;
+	display: flex;
 }
 #pandora-lb-content-inner{
 	position: relative;
