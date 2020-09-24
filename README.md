@@ -1,6 +1,8 @@
 ## Pandora Lightbox
 Pandora is a lightweight lightbox, it works fine on iPad, pc, mac. you can load content with height overflowed and scroll the lightbox content without pain.
 
+Try it online: [http://develus.com/_github/pandora-lightbox](http://develus.com/_github/pandora-lightbox)
+
 ### Usage
 
 Just include jQuery and core files from "source/" folder.
