@@ -16,7 +16,7 @@ function closePandoraLightbox(){
 
 jQuery(function(){
 
-	jQuery(".pandora-lightbox").click(function(){
+	jQuery("body").on("click", ".pandora-lightbox", function(){
 
 		var uri = jQuery(this).attr('href');
 		console.log(uri);
