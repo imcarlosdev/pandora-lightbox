@@ -1,8 +1,8 @@
 /*
 PANDORA LIGHTBOX V1.0
 License: MIT
-Author: Carlos Maldonado @choquo
-Github: https://github.com/choquo/pandora-lightbox
+Author: Carlos Maldonado
+Github: https://github.com/imcarlosdev/pandora-lightbox
 */
 
 var pandoraTransitionSpeed = 300;
